@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--<script src="xml2json.js"></script> -->
 <html ng-app="sida">
 	<head>
 		<meta charset="utf-8">
@@ -9,24 +10,38 @@
 	</body>
 </html>
 <script type="text/javascript">
-	var xmlhttp = new XMLHttpRequest();
-	var url = "http://api.arbetsformedlingen.se/platsannons/soklista/lan";
+	xmlDoc=loadXMLDoc("db.xml");
+	document.write("Nodename: " + xmlDoc.nodeName);
+	document.write(" (nodetype: " + xmlDoc.nodeType + ")<br>");
+	document.write(" (value: " + xmlDoc.childNodes[0].nodeValue + ")<br>");
+/*	var xmlhttp = new XMLHttpRequest();
+	var hejhej = "http://api.arbetsformedlingen.se/platsannons/soklista/lan";
+	//var hejhej = "db.xml";
+	var url = xml2json(hejhej);
 
 	xmlhttp.onreadystatechange = function() {
 	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	    	console.log(xmlhttp.responseText);
 	        var myArray = JSON.parse(xmlhttp.responseText);
 	        myFunction(myArray);
 	    }
 	}
 	xmlhttp.open("GET", url, true);
 	xmlhttp.send();
+*/
 
-	function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out += '<p>' + arr[i] + '</p><br>';
-    }
-    document.getElementById("content").innerHTML = out;
+function loadXMLDoc(filename)
+{
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // code for IE5 and IE6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+	xhttp.open("GET",filename,false);
+	xhttp.send();
+return xhttp.responseXML;
 }
 </script>
