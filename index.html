@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="sida">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1> Hello testing </h1>
+		<span id="content"></span>
+	</body>
+</html>
+<script type="text/javascript">
+	var xmlhttp = new XMLHttpRequest();
+	var url = "http://api.arbetsformedlingen.se/platsannons/soklista/lan";
+
+	xmlhttp.onreadystatechange = function() {
+	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+	        var myArray = JSON.parse(xmlhttp.responseText);
+	        myFunction(myArray);
+	    }
+	}
+	xmlhttp.open("GET", url, true);
+	xmlhttp.send();
+
+	function myFunction(arr) {
+    var out = "";
+    var i;
+    for(i = 0; i < arr.length; i++) {
+        out += '<p>' + arr[i] + '</p><br>';
+    }
+    document.getElementById("content").innerHTML = out;
+}
+</script>
