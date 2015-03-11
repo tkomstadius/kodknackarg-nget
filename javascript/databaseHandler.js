@@ -10,6 +10,7 @@ if (window.XMLHttpRequest)
 xmlhttp.open("GET","database/lan.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
+console.log("Hello!");
 
 // Creating table of content
 lan_och_platser = "<table><tr><th>Län</th><th>Antal</th></tr>";
