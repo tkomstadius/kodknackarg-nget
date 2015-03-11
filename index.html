@@ -10,38 +10,27 @@
 	</body>
 </html>
 <script type="text/javascript">
-	xmlDoc=loadXMLDoc("db.xml");
-	document.write("Nodename: " + xmlDoc.nodeName);
-	document.write(" (nodetype: " + xmlDoc.nodeType + ")<br>");
-	document.write(" (value: " + xmlDoc.childNodes[0].nodeValue + ")<br>");
-/*	var xmlhttp = new XMLHttpRequest();
-	var hejhej = "http://api.arbetsformedlingen.se/platsannons/soklista/lan";
-	//var hejhej = "db.xml";
-	var url = xml2json(hejhej);
+		if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
 
-	xmlhttp.onreadystatechange = function() {
-	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-	    	console.log(xmlhttp.responseText);
-	        var myArray = JSON.parse(xmlhttp.responseText);
-	        myFunction(myArray);
-	    }
-	}
-	xmlhttp.open("GET", url, true);
+	  xmlhttp.open("GET","db.xml",false);
 	xmlhttp.send();
-*/
-
-function loadXMLDoc(filename)
-{
-if (window.XMLHttpRequest)
-  {
-  xhttp=new XMLHttpRequest();
-  }
-else // code for IE5 and IE6
-  {
-  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-	xhttp.open("GET",filename,false);
-	xhttp.send();
-return xhttp.responseXML;
-}
+	xmlDoc=xmlhttp.responseXML; 
+	document.write("<table><tr><th>Län</th><th>Antal</th></tr>");
+	var x=xmlDoc.getElementsByTagName("sokdata");
+	for (i=0;i<x.length;i++)
+	  { 
+	  document.write("<tr><td>");
+	  document.write(x[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue);
+	  document.write("</td><td>");
+	  document.write(x[i].getElementsByTagName("antal_platsannonser")[0].childNodes[0].nodeValue);
+	  document.write("</td></tr>");
+	  }
+	document.write("</table>");
 </script>
