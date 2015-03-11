@@ -1,5 +1,9 @@
 # kodknackargänget
-Kodknackargänget gör Hack for Sweden
+Kodknackargänget gör Hack for Sweden. 
+En ascool hemsida som ska lösa ALLA våra problem. 
+
+
+Projektet behöver ligga på en server (använd xampp på windows och ampp på mac)
 
 Länkar: 
 XML:
