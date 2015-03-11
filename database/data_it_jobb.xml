@@ -1,0 +1,78 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<soklista>
+<listnamn>yrkesgrupper</listnamn>
+<totalt_antal_platsannonser>1848</totalt_antal_platsannonser>
+<totalt_antal_ledigajobb>2320</totalt_antal_ledigajobb>
+<sokdata>
+<id>3511</id>
+<namn>Drifttekniker, IT</namn>
+<antal_platsannonser>148</antal_platsannonser>
+<antal_ledigajobb>189</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2516</id>
+<namn>IT-säkerhetsspecialister</namn>
+<antal_platsannonser>26</antal_platsannonser>
+<antal_ledigajobb>29</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2512</id>
+<namn>Mjukvaru- och systemutvecklare m.fl.</namn>
+<antal_platsannonser>953</antal_platsannonser>
+<antal_ledigajobb>1157</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3514</id>
+<namn>Nätverks- och systemtekniker m.fl.</namn>
+<antal_platsannonser>69</antal_platsannonser>
+<antal_ledigajobb>109</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3512</id>
+<namn>Supporttekniker, IT</namn>
+<antal_platsannonser>239</antal_platsannonser>
+<antal_ledigajobb>367</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3513</id>
+<namn>Systemadministratörer</namn>
+<antal_platsannonser>82</antal_platsannonser>
+<antal_ledigajobb>89</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2511</id>
+<namn>Systemanalytiker och IT-arkitekter m.fl.</namn>
+<antal_platsannonser>96</antal_platsannonser>
+<antal_ledigajobb>116</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2515</id>
+<namn>Systemförvaltare m.fl.</namn>
+<antal_platsannonser>48</antal_platsannonser>
+<antal_ledigajobb>50</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2514</id>
+<namn>Systemtestare och testledare</namn>
+<antal_platsannonser>91</antal_platsannonser>
+<antal_ledigajobb>110</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2513</id>
+<namn>Utvecklare inom spel och digitala media</namn>
+<antal_platsannonser>25</antal_platsannonser>
+<antal_ledigajobb>25</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3515</id>
+<namn>Webbmaster och webbadministratörer</namn>
+<antal_platsannonser>36</antal_platsannonser>
+<antal_ledigajobb>38</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2519</id>
+<namn>Övriga IT-specialister</namn>
+<antal_platsannonser>35</antal_platsannonser>
+<antal_ledigajobb>41</antal_ledigajobb>
+</sokdata>
+</soklista>
