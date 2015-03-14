@@ -7,26 +7,21 @@ if (window.XMLHttpRequest)
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
 
+// var url = "http://api.arbetsformedlingen.se/platsannons/soklista/kommuner?lanid=10.xml";
 xmlhttp.open("GET","database/lan.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
-console.log("Hello!");
 
 // Search function for län.
-var sokNamn = "Hallands";
-var lanNamn = sokNamn + " " + "län";
-console.log(lanNamn);
-
-// Creating table of content
-lan_och_platser = "<table><tr><th>Län</th><th>Antal</th></tr>";
 var x=xmlDoc.getElementsByTagName("sokdata");
+var number = 1;
+
+
 for (i=0;i<x.length;i++)
   { 
-  	if(x[i].getElementsByTagName('namn')[0].childNodes[0].nodeValue == lanNamn){		
-	  	lan_och_platser += "<tr><td>" + x[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue + 
-	  	"</td><td>" + x[i].getElementsByTagName("antal_platsannonser")[0].childNodes[0].nodeValue + "</td></tr>";
-  	}
+  	// console.log(number);
+  	document.getElementById(number).innerHTML = x[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
+  	number++;
   }
-lan_och_platser += "</table>";
-// Returning result in "content"
-document.getElementById("content").innerHTML = lan_och_platser;
+
+
