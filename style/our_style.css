@@ -19,17 +19,17 @@ div li {
   display: block;
 }
 
-.intro {
-  background: url(../graphics/bakgrund1.png) no-repeat bottom center scroll;
+.jumbotron {
+  background: url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 1500px;
   width: 100%;
   background-repeat: no-repeat;
 }
 
-.intro .container {
+/* {
   position: relative;
   top: 100px;
-}
+}*/
 
 .intro-text li {
   display: inline;
@@ -53,9 +53,18 @@ header .container {
 header .intro-text {
   display: block;
 }
-#logo-top {
+
+@font-face {
+  font-family: 'jaapokki';
+  src: url('graphics/Typsnitt/Jaapokki-Regular.otf') format('opentype');
 }
 
-.new-page {
+h1 {
+  font-family: 'jaapokki', sans-serif;
+  text-align: center;
+}
 
+div a:link {
+  background: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat bottom center scroll;
+  
 }
