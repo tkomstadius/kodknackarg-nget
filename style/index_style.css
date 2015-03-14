@@ -24,6 +24,7 @@ div li {
   height: 1500px;
   width: 100%;
   background-repeat: no-repeat;
+  position: center;
 }
 
 /* {
@@ -55,27 +56,17 @@ header .intro-text {
   padding-top: 300px;
 }
 
-@font-face {
-  font-family: 'jaapokki';
-  src: url('graphics/Typsnitt/Jaapokki-Regular.otf') format('opentype');
+#greeting {
+  position: center;
+  padding-bottom: 40px;
 }
-
-h1 {
-  font-family: 'jaapokki', sans-serif;
-  text-align: center;
-}
-
-/*
-.work a:link {
-  background: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat;
-  height: 50px; 
-}*/
 
 #get-job {
   content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
   position: center;
   display: inline-block;
   max-width: 13%;
+  padding-right: 6px;
 }
 
 #get-job:hover {
@@ -83,13 +74,15 @@ h1 {
   position: center;
   display: inline-block;
   max-width: 13%;
+  padding-right: 6px;
 }
 
 #recruit {
   content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
   position: center;
   display: inline-block;
-  max-width: 13%; 
+  max-width: 13%;
+  padding-left: 6px; 
 }
 
 #recruit:hover {
@@ -97,4 +90,5 @@ h1 {
   position: center;
   display: inline-block;
   max-width: 13%;
+  padding-left: 6px; 
 }
