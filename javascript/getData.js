@@ -41,6 +41,6 @@ function matchAd(){
 	alert(x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue);
 }
 function getButton(){
-	var display = "<a href='#process'><div id='get-job' onclick='getAds()''></div></a>";							
+	var display = "<a href='#process'><div id='search' onclick='getAds()''></div></a>";							
 	document.getElementById("showButton").innerHTML = display;
 }

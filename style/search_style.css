@@ -100,6 +100,20 @@ header .intro-text {
   max-width: 13%;
   padding-right: 6px;
 }
+#search {
+  content: url(../graphics/Knappar/knapp_sok.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
+#search:hover {
+  content: url(../graphics/Knappar/knapp_sok_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
 
 #recruit {
   content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
