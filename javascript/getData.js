@@ -1,4 +1,5 @@
-if (window.XMLHttpRequest)
+function getAds(){
+	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
 	  }
@@ -7,18 +8,42 @@ if (window.XMLHttpRequest)
 	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	  }
 
-xmlhttp.open("GET","database/lan.xml",false);
-xmlhttp.send();
-xmlDoc=xmlhttp.responseXML; 
-console.log("Hello!");
+	// Arbetsförmedlingen har en spärr på sin databas från http-request. De ska eventuellt ta bort denna i framtiden (eftersom vi lyfte frågan) 
+	// men kan inte göra något just nu. Vi får därför "fulkoda" från vårt egna provisoriska databassystem. 	
+	//  xmlhttp.open("GET","http://api.arbetsformedlingen.se/platsannons/soklista/kommuner?lanid=10",false);
+	xmlhttp.open("GET","database/data_it_stockholm.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML; 
 
-// Creating table of content
-lan_och_platser = "<table><tr><th>Län</th><th>Antal</th></tr>";
-var x=xmlDoc.getElementsByTagName("sokdata");
-for (i=0;i<x.length;i++)
-  { 
-  	lan_och_platser += "<tr><td>" + x[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue + "</td><td>" + x[i].getElementsByTagName("antal_platsannonser")[0].childNodes[0].nodeValue + "</td></tr>";
-  }
-lan_och_platser += "</table>";
-// Returning result in "content"
-document.getElementById("content").innerHTML = lan_och_platser;
+	var toDisplay; 
+	
+	if(document.getElementById("aliceContent").innerHTML == ""){
+		console.log("den e noll");
+		var x=xmlDoc.getElementsByTagName("matchningdata");
+		toDisplay = "<br><br>Lista<br><br>";
+		//console.log(x.length);
+		//for (i=0;i<x.length;i++)
+		for(i=1; i<4; i++)
+		  { 
+		  	toDisplay += "<a href='javascript:matchAd(" +i+ ")'>";
+		  	toDisplay += x[i].getElementsByTagName("annonsrubrik")[0].childNodes[0].nodeValue+ ", Företag: ";
+		  	toDisplay += x[i].getElementsByTagName("arbetsplatsnamn")[0].childNodes[0].nodeValue;
+		  	toDisplay += "</a><br><br>";
+		  	}
+
+		document.getElementById("aliceContent").innerHTML = toDisplay;
+	}
+	else {
+		document.getElementById("aliceContent").innerHTML = "";
+		console.log("den e nånting");
+	}
+	
+}
+function matchAd(){
+	xmlhttp.open("GET","database/jobb2_data_it_stockholm_chef.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+	var x = xmlDoc.getElementsByTagName("annons"); 
+	console.log(x[0]);
+	alert(x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue);
+}
