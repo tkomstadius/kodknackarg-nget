@@ -31,7 +31,7 @@ div li {
   top: 100px;
 }*/
 
-.intro-text li {
+.intro-buttons {
   display: inline;
 }
 
@@ -52,6 +52,7 @@ header .container {
 
 header .intro-text {
   display: block;
+  padding-top: 300px;
 }
 
 @font-face {
@@ -64,7 +65,36 @@ h1 {
   text-align: center;
 }
 
-div a:link {
-  background: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat bottom center scroll;
-  
+/*
+.work a:link {
+  background: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat;
+  height: 50px; 
+}*/
+
+#get-job {
+  content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+}
+
+#get-job:hover {
+  content: url(../graphics/Knappar/knapp_jag_vill_jobba_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+}
+
+#recruit {
+  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
+  position: center;
+  display: inline-block;
+  max-width: 13%; 
+}
+
+#recruit:hover {
+  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
 }
