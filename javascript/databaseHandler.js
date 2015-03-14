@@ -37,3 +37,6 @@ for (i=0;i<y.length;i++)
   	document.getElementById(countYrke).innerHTML = y[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
   	countYrke++;
   }
+
+
+  
