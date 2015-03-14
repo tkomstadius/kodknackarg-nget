@@ -67,7 +67,7 @@ header .intro-text {
 }
 
 #recruit {
-  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
+  content: url(../graphics/Knappar/knapp_registrera.png) no-repeat center;
   position: center;
   display: inline-block;
   max-width: 13%;
@@ -108,13 +108,14 @@ header .intro-text {
 
 #headline-r {
   display: block;
-  margin-top: 4%;
+  margin-top: 0;
+  padding-top: 0;
   color: white;
   padding-left: 19.5%;
 }
 
 #description-r {
-  font-size: 18px;
+  font-size: 14px;
   color: white;
 }
 
