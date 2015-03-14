@@ -11,6 +11,49 @@
 	</head>
 	<body>
 		<h1> Hello testing </h1>
+
+		<p id="demo"></p>
+
+      <!-- Choose län--> 
+      <!-- TODO: do it better with a loop -->
+   		<select id="content1" onchange="getIndex()"> 
+			  <option id="1">0</option>
+			  <option id="2">0</option>
+			  <option id="3">0</option>
+			  <option id="4">0</option>
+			  <option id="5">0</option>
+			  <option id="6">0</option>
+			  <option id="7">0</option>
+			  <option id="8">0</option>
+			  <option id="9">0</option>
+			  <option id="10">0</option>
+			  <option id="11">0</option>
+			  <option id="12">0</option>
+			  <option id="13">0</option>
+			  <option id="14">0</option>
+			  <option id="15">0</option>
+			  <option id="16">0</option>
+			  <option id="17">0</option>
+			  <option id="18">0</option>
+			  <option id="19">0</option>
+			  <option id="20">0</option>
+			  <option id="21">0</option>
+			  <option id="22">0</option>
+
+		</select>
+		
+		<!-- index for län -->
+		<script>
+		function getIndex() {
+			    var x = document.getElementById("content1").value;
+			    document.getElementById("demo").innerHTML = "You selected: " + x;
+			}
+		</script>
+		
+	</body>
+	<footer>
+		<script src="javascript/databaseHandler.js"></script>
+
 		<!-- Här skriver Kajsa-->
 		<span id="content"></span>
 
@@ -26,5 +69,6 @@
 
 		<!-- Här skriver Alice-->
 		<script src="javascript/getData.js"></script>
+
 	</footer>
 </html>
