@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="style/search_style.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../style/search_style.css"/>
 		<title>Incognito</title>
 	</head>
 	
@@ -15,15 +15,11 @@
 
 				<!-- brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header page-scroll">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
 					<a class="navbar-brand" href="#page-top">
-						<img id="logo-top" src="graphics/logga.png"/>
+				<a class="navbar-brand" href="#page-top">
+						<img id="logo-top" src="../graphics/logga.png"/>
 					</a>
+                    
 				</div>
 
 				<!-- collect the nav links, forms and other content for toggling -->
@@ -37,13 +33,13 @@
 							<a href="#sok">Sök jobb</a>
 						</li> -->
 						<li class="new-page">
-							<a href="pages/search_job.html">Sök jobb</a>
+							<a href="../pages/search_job.html">Sök jobb</a>
 						</li>
 						<li class="new_page">
-							<a href="pages/buisness.html">Företag</a>
+							<a href="../pages/buisness.html">Företag</a>
 						</li>
 						<li class="new_page">
-							<a href="pages/login.html">Logga in</a>
+							<a href="../pages/login.html">Logga in</a>
 						</li>
 					</ul>
 				</div>
@@ -56,8 +52,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="intro-text">
-							<div id="greeting">
-								<img src="graphics/vemeru.png" width="27.5%">
+							<div id="jobsearch">
+								<p>Hej</p>
 							</div>
 								<a href="pages/search_job.html">
 									<div id="get-job"></div>										
@@ -72,16 +68,37 @@
 			</div>
 		</header>
 
+    <!-- SECTION, PROCESSEN -->
+		<section id="process">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>SÖK JOBB</h2>
+                                    <!-- SECTION, Åsas hemsnickrade sökfält-->
+                                        <form>
+                                            <div class="form-group">
+                                            <input type="search" class="form-control" id="examplesearch" placeholder="Sök på tjänst, företag eller län">
+                                            </div>
+         <button type="submit" class="btn btn-default">SÖK</button>
+</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</body>
+    
 		<!-- SECTION, PROCESSEN -->
 		<section id="process">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<h2>Processen</h2>
+						<h2>PROCESSEN</h2>
 					</div>
 				</div>
 			</div>
 		</section>
+    
 		
 	</body>
 	
@@ -89,5 +106,7 @@
 		<script src="/kodknackarna/javascript/databaseHandler.js"></script>
 	</footer>
 </html>
+
+
 
 

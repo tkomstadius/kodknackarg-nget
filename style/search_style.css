@@ -21,7 +21,7 @@ div li {
 
 .jumbotron {
   background: url(../graphics/Bakgrund/bakgrund3_bl%C3%A5.png) no-repeat bottom center scroll;
-  height: 1500px;
+  height: 900px;
   width: 100%;
   background-repeat: no-repeat;
   position: center;
@@ -91,4 +91,14 @@ header .intro-text {
   display: inline-block;
   max-width: 13%;
   padding-left: 6px; 
+}
+
+/*Sida för jobbsökande*/
+#jobsearch {
+  position: right;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font: montserrat;
 }
