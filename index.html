@@ -12,11 +12,11 @@
 	<body>
 		<h1> Hello testing </h1>
 
-		<p id="demo"></p>
+		<p id="lanChoose"></p>
 
       <!-- Choose län--> 
       <!-- TODO: do it better with a loop -->
-   		<select id="content1" onchange="getIndex()"> 
+   		<select id="lanDropDown" onchange="getIndexLan()"> 
 			  <option id="1">0</option>
 			  <option id="2">0</option>
 			  <option id="3">0</option>
@@ -41,13 +41,44 @@
 			  <option id="22">0</option>
 
 		</select>
+		<p id="yrkeChoose"></p>
+		<select id="yrkeDropDown" onchange="getIndexYrke()"> 
+			  <option id="23">0</option>
+			  <option id="24">0</option>
+			  <option id="25">0</option>
+			  <option id="26">0</option>
+			  <option id="27">0</option>
+			  <option id="28">0</option>
+			  <option id="29">0</option>
+			  <option id="30">0</option>
+			  <option id="31">0</option>
+			  <option id="32">0</option>
+			  <option id="33">0</option>
+			  <option id="34">0</option>
+			  <option id="35">0</option>
+			  <option id="36">0</option>
+			  <option id="37">0</option>
+			  <option id="38">0</option>
+			  <option id="39">0</option>
+			  <option id="40">0</option>
+			  <option id="41">0</option>
+			  <option id="42">0</option>
+			  <option id="43">0</option>
+			  <option id="44">0</option>
+			  <option id="45">0</option>
+
+		</select>
 		
 		<!-- index for län -->
 		<script>
-		function getIndex() {
-			    var x = document.getElementById("content1").value;
-			    document.getElementById("demo").innerHTML = "You selected: " + x;
+		function getIndexLan() {
+			    var x = document.getElementById("lanDropDown").value;
+			    document.getElementById("lanChoose").innerHTML = "You selected: " + x;
 			}
+		function getIndexYrke(){
+			var x = document.getElementById("yrkeDropDown").value;
+			document.getElementById("yrkeChoose").innerHTML = "You selected: " + x;
+		}
 		</script>
 		
 	</body>
