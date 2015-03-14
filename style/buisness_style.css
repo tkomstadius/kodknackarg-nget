@@ -15,6 +15,22 @@ div li {
   display: inline;
 }
 
+#top {
+  font-weight: bold
+}
+
+#top:link {
+  color: black;
+}
+
+#top:hover {
+  background-color: rgb(217, 136, 34);
+}
+
+#top:visited {
+  color: black;
+}
+
 .jumbotron {
   background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 1000px;
@@ -50,24 +66,8 @@ header .intro-text {
   padding-bottom: 40px;
 }
 
-#get-job {
-  content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-right: 6px;
-}
-
-#get-job:hover {
-  content: url(../graphics/Knappar/knapp_jag_vill_jobba_hover.png);
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-right: 6px;
-}
-
 #recruit {
-  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
+  content: url(../graphics/Knappar/knapp_registrera.png) no-repeat center;
   position: center;
   display: inline-block;
   max-width: 13%;
@@ -106,34 +106,30 @@ header .intro-text {
   margin-bottom: 10%;
 }
 
-.path {
-  content: url(../graphics/Process/processen_hela_vit.png) no-repeat center;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 15%;
-  padding-bottom: 10%;
-}
-
-#headline-p {
+#headline-r {
   display: block;
-  margin-top: 5px;
+  margin-top: 0;
+  padding-top: 0;
   color: white;
-  padding-left: 20%;
+  padding-left: 19.5%;
 }
 
-#description-p {
-  font-size: 18px;
+#description-r {
+  font-size: 14px;
   color: white;
-  padding-left: 33%;
 }
 
-#fix {
-  padding-top: 14%;
+#register {
+  padding-left: 19%;
+  max-width: 70%;
 }
 
 #footer {
   height: 15%;
+}
+
+.btn {
+  color: white;
+  background-color: black;
+  margin-top: 2%;
 }

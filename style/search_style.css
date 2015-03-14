@@ -15,6 +15,22 @@ div li {
   display: inline;
 }
 
+#top {
+  font-weight: bold
+}
+
+#top:link {
+  color: black;
+}
+
+#top:hover {
+  background-color: rgb(217, 136, 34);
+}
+
+#top:visited {
+  color: black;
+}
+
 .container {
   display: block;
 }
