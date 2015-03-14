@@ -61,12 +61,20 @@ header .intro-text {
   /*background: gray; */
 } 
 
-#left, #right { 
+#left { 
   width: 40%; 
   margin:5px; 
   padding: 1em; 
   background: white; 
   /*border: 1px solid black; */
+} 
+
+#right { 
+  width: 40%; 
+  margin:5px; 
+  padding: 1em; 
+  background: white; 
+  border: 1px solid black; 
 } 
 
 #left  { float:left;  }
