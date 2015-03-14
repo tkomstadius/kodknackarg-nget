@@ -15,6 +15,22 @@ div li {
   display: inline;
 }
 
+#top {
+  font-weight: bold
+}
+
+#top:link {
+  color: black;
+}
+
+#top:hover {
+  background-color: rgb(217, 136, 34);
+}
+
+#top:visited {
+  color: black;
+}
+
 .jumbotron {
   background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 1000px;
@@ -94,13 +110,12 @@ header .intro-text {
   display: block;
   margin-top: 4%;
   color: white;
-  padding-left: 20%;
+  padding-left: 19.5%;
 }
 
 #description-r {
   font-size: 18px;
   color: white;
-  padding-left: 4%;
 }
 
 #register {

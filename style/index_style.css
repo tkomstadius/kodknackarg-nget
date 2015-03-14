@@ -24,7 +24,11 @@ div li {
 }
 
 #top:hover {
-  background-color: white;
+  background-color: rgb(217, 136, 34);
+}
+
+#top:visited {
+  color: black;
 }
 
 .jumbotron {
