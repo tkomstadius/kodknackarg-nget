@@ -1,0 +1,138 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<soklista>
+<listnamn>yrkesgrupper</listnamn>
+<totalt_antal_platsannonser>1284</totalt_antal_platsannonser>
+<totalt_antal_ledigajobb>2347</totalt_antal_ledigajobb>
+<sokdata>
+<id>7114</id>
+<namn>Anläggningsarbetare</namn>
+<antal_platsannonser>121</antal_platsannonser>
+<antal_ledigajobb>287</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7115</id>
+<namn>Anläggningsdykare</namn>
+<antal_platsannonser>0</antal_platsannonser>
+<antal_ledigajobb>0</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>8342</id>
+<namn>Anläggningsmaskinförare m.fl.</namn>
+<antal_platsannonser>48</antal_platsannonser>
+<antal_ledigajobb>75</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3121</id>
+<namn>Arbetsledare inom bygg, anläggning och gruva</namn>
+<antal_platsannonser>116</antal_platsannonser>
+<antal_ledigajobb>123</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7113</id>
+<namn>Betongarbetare</namn>
+<antal_platsannonser>48</antal_platsannonser>
+<antal_ledigajobb>115</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>8113</id>
+<namn>Brunnsborrare m.fl.</namn>
+<antal_platsannonser>0</antal_platsannonser>
+<antal_ledigajobb>0</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7213</id>
+<namn>Byggnads- och ventilationsplåtslagare</namn>
+<antal_platsannonser>20</antal_platsannonser>
+<antal_ledigajobb>34</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>2142</id>
+<namn>Civilingenjörsyrken inom bygg och anläggning</namn>
+<antal_platsannonser>266</antal_platsannonser>
+<antal_ledigajobb>303</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7122</id>
+<namn>Golvläggare</namn>
+<antal_platsannonser>18</antal_platsannonser>
+<antal_ledigajobb>30</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>9310</id>
+<namn>Grovarbetare inom bygg och anläggning</namn>
+<antal_platsannonser>39</antal_platsannonser>
+<antal_ledigajobb>88</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>8111</id>
+<namn>Gruv- och stenbrottsarbetare</namn>
+<antal_platsannonser>5</antal_platsannonser>
+<antal_ledigajobb>12</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>3112</id>
+<namn>Ingenjörer och tekniker inom bygg och anläggning</namn>
+<antal_platsannonser>212</antal_platsannonser>
+<antal_ledigajobb>304</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7123</id>
+<namn>Isoleringsmontörer</namn>
+<antal_platsannonser>8</antal_platsannonser>
+<antal_ledigajobb>25</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>8343</id>
+<namn>Kranförare m.fl.</namn>
+<antal_platsannonser>8</antal_platsannonser>
+<antal_ledigajobb>14</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7126</id>
+<namn>Kyl- och värmepumpstekniker m.fl.</namn>
+<antal_platsannonser>10</antal_platsannonser>
+<antal_ledigajobb>13</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7112</id>
+<namn>Murare m.fl.</namn>
+<antal_platsannonser>42</antal_platsannonser>
+<antal_ledigajobb>61</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7131</id>
+<namn>Målare</namn>
+<antal_platsannonser>38</antal_platsannonser>
+<antal_ledigajobb>61</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7116</id>
+<namn>Ställningsbyggare</namn>
+<antal_platsannonser>14</antal_platsannonser>
+<antal_ledigajobb>98</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7121</id>
+<namn>Takmontörer</namn>
+<antal_platsannonser>17</antal_platsannonser>
+<antal_ledigajobb>50</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7111</id>
+<namn>Träarbetare, snickare m.fl.</namn>
+<antal_platsannonser>145</antal_platsannonser>
+<antal_ledigajobb>433</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7125</id>
+<namn>VVS-montörer m.fl.</namn>
+<antal_platsannonser>97</antal_platsannonser>
+<antal_ledigajobb>178</antal_ledigajobb>
+</sokdata>
+<sokdata>
+<id>7119</id>
+<namn>Övriga byggnads- och anläggningsarbetare</namn>
+<antal_platsannonser>12</antal_platsannonser>
+<antal_ledigajobb>43</antal_ledigajobb>
+</sokdata>
+</soklista>
