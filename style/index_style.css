@@ -20,25 +20,17 @@ div li {
 }
 
 .jumbotron {
-  background: url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
-  height: 1500px;
+  background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
+  height: 1000px;
   width: 100%;
   background-repeat: no-repeat;
   position: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
-
-/* {
-  position: relative;
-  top: 100px;
-}*/
 
 .intro-buttons {
   display: inline;
-}
-
-.greeting {
-  font-size: 50px;
-  text-align: center;
 }
 
 header {
@@ -48,7 +40,8 @@ header {
 
 header .container {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 header .intro-text {
@@ -91,4 +84,9 @@ header .intro-text {
   display: inline-block;
   max-width: 13%;
   padding-left: 6px; 
+}
+
+#equality {
+  display: block;
+  margin-top: 5px;
 }
