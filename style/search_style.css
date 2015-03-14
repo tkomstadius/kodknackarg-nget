@@ -20,7 +20,7 @@ div li {
 }
 
 .jumbotron {
-  background: url(../graphics/Bakgrund/bakgrund_bla.png) no-repeat bottom center scroll;
+  background: url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 900px;
   width: 100%;
   background-repeat: no-repeat;
@@ -109,4 +109,10 @@ header .intro-text {
 
 h2 {
   font-family:helvetica;
+}
+#lanDropDown {
+  color: black;
+}
+#yrkeDropDown {
+  color: black;
 }

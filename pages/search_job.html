@@ -52,168 +52,85 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="intro-text">
-							<div id="greeting">
+							<div id="greeting">		
 								<!-- SECTION, Åsas hemsnickrade sökfält-->
-                                    <form>
-                                        <div class="form-group">
-                                            <input type="search" class="form-control" id="examplesearch" placeholder="Sök på tjänst, företag eller län">
-                                            <button type="submit" class="btn btn-default">SÖK</button>
-                                        </div>
-                                    </form>
+									<select id="lanDropDown" onchange="getButton()"> 
+									  <option id="1" selected disabled>0</option>
+									  <option id="2">0</option>
+									  <option id="3">0</option>
+									  <option id="4">0</option>
+									  <option id="5">0</option>
+									  <option id="6">0</option>
+									  <option id="7">0</option>
+									  <option id="8">0</option>
+									  <option id="9">0</option>
+									  <option id="10">0</option>
+									  <option id="11">0</option>
+									  <option id="12">0</option>
+									  <option id="13">0</option>
+									  <option id="14">0</option>
+									  <option id="15">0</option>
+									  <option id="16">0</option>
+									  <option id="17">0</option>
+									  <option id="18">0</option>
+									  <option id="19">0</option>
+									  <option id="20">0</option>
+									  <option id="21">0</option>
+									  <option id="22">0</option>
+									  <option id="23">0</option>
+									  </select>
+									<br><br>
+									<select id="yrkeDropDown" onchange="getButton()"> 
+									  <option id="24" selected disabled>0</option>
+									  <option id="25">0</option>
+									  <option id="26">0</option>
+									  <option id="27">0</option>
+									  <option id="28">0</option>
+									  <option id="29">0</option>
+									  <option id="30">0</option>
+									  <option id="31">0</option>
+									  <option id="32">0</option>
+									  <option id="33">0</option>
+									  <option id="34">0</option>
+									  <option id="35">0</option>
+									  <option id="36">0</option>
+									  <option id="37">0</option>
+									  <option id="38">0</option>
+									  <option id="39">0</option>
+									  <option id="40">0</option>
+									  <option id="41">0</option>
+									  <option id="42">0</option>
+									  <option id="43">0</option>
+									  <option id="44">0</option>
+									  <option id="45">0</option>
+									</select>
+									<br><br>
+									<span id="showButton"></span>
 							</div>
-								
 							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</header>
-				<h1> Incognito Job Search </h1>
 
-		<p id="lanChoose"></p>
-      <!-- Choose län, using databaseHandler.js--> 
-      <!-- TODO: do it better with a loop -->
-      	
-  <!-- //     		var a = "lan";
-		// 	var b = "sokdata";
-		// 	getDataBase(a, b); -->
-	
-
-   		<select id="lanDropDown" onchange="getIndexLan()"> 
-			  <option id="1">0</option>
-			  <option id="2">0</option>
-			  <option id="3">0</option>
-			  <option id="4">0</option>
-			  <option id="5">0</option>
-			  <option id="6">0</option>
-			  <option id="7">0</option>
-			  <option id="8">0</option>
-			  <option id="9">0</option>
-			  <option id="10">0</option>
-			  <option id="11">0</option>
-			  <option id="12">0</option>
-			  <option id="13">0</option>
-			  <option id="14">0</option>
-			  <option id="15">0</option>
-			  <option id="16">0</option>
-			  <option id="17">0</option>
-			  <option id="18">0</option>
-			  <option id="19">0</option>
-			  <option id="20">0</option>
-			  <option id="21">0</option>
-			  <option id="22">0</option>
-
-		</select>
-
-		<!-- Choose yrke -->
-		<p id="yrkeChoose"></p>
-		<select id="yrkeDropDown" onchange="getIndexYrke()"> 
-			  <option id="23">0</option>
-			  <option id="24">0</option>
-			  <option id="25">0</option>
-			  <option id="26">0</option>
-			  <option id="27">0</option>
-			  <option id="28">0</option>
-			  <option id="29">0</option>
-			  <option id="30">0</option>
-			  <option id="31">0</option>
-			  <option id="32">0</option>
-			  <option id="33">0</option>
-			  <option id="34">0</option>
-			  <option id="35">0</option>
-			  <option id="36">0</option>
-			  <option id="37">0</option>
-			  <option id="38">0</option>
-			  <option id="39">0</option>
-			  <option id="40">0</option>
-			  <option id="41">0</option>
-			  <option id="42">0</option>
-			  <option id="43">0</option>
-			  <option id="44">0</option>
-			  <option id="45">0</option>
-		</select>
-		
-		<!-- index for län and yrke -->
-		<script>
-		function getIndexLan() {
-			    var x = document.getElementById("lanDropDown").value;
-			    document.getElementById("lanChoose").innerHTML = "You selected: " + x;
-		}
-		function getIndexYrke(){
-			var x = document.getElementById("yrkeDropDown").value;
-			document.getElementById("yrkeChoose").innerHTML = "You selected: " + x;
-		}
-	
-		</script>
 		<br><br>
-		<span id ="searchResult"></span>
-		<button onClick="getAds()" id ="button1">Show me some jobs!</button>		
-	
-	
-	
-</html>
-
-		<!-- HEADER -->
-		<header class="intro">
-			<div class="jumbotron">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="intro-text">
-							<div id="jobsearch">
-								<p>Hej</p>
-                            
-                                <!-- SECTION, SÖK JOBB -->
-		<section id="jobsearch">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<h2>Processen</h2>
-					</div>
-				</div>
-			</div>
-		</section>
-							</div>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		
-	</body>
-    
 		<!-- SECTION, PROCESSEN -->
 		<section id="process">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<h2>hej igen</h2>
+						<br>
+						<span id ="searchResult"></span>
 					</div>
 				</div>
 			</div>
 		</section>
-    <button onClick="getAds()" id ="button1">Show me some jobs!</button>	
-		<br><br>
-		<!-- STATISTICS FOR DIVERSITY -->
-		<div id="diversity"></div>	
 	</body>
 	<footer>	
-
-		<script src="javascript/databaseHandler.js"></script>
-		<script src="javascript/getData.js"></script>
-		<script src="javascript/getDiversity.js"></script>
-	</footer>
-
-		<footer>
-		<script src="javascript/databaseHandler.js"></script>
-		
-		<script src="javascript/getData.js"></script>
-
-	</footer>
-	</body>
-	
-	<footer>
-		<script src="/kodknackarna/javascript/databaseHandler.js"></script>
+		<script src="/kodknackarna/javascript/getDiversity.js"></script>
+		<script src="/kodknackarna/javascript/getData.js"></script>
+		<script src="/kodknackarna/javascript/databaseHandler.js"></script> 
 	</footer>
 </html>
 
