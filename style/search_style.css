@@ -20,7 +20,7 @@ div li {
 }
 
 .jumbotron {
-  background: url(../graphics/Bakgrund/bakgrund3_bl%C3%A5.png) no-repeat bottom center scroll;
+  background: url(../graphics/Bakgrund/bakgrund_bla.png) no-repeat bottom center scroll;
   height: 900px;
   width: 100%;
   background-repeat: no-repeat;
@@ -39,6 +39,14 @@ div li {
 .greeting {
   font-size: 50px;
   text-align: center;
+    max-width:  width: 300px;
+}
+
+.form-group {
+    display: block;
+    max-width: 300px;
+    padding-left: 50px;
+    object-position: left;
 }
 
 header {
@@ -100,5 +108,5 @@ header .intro-text {
 }
 
 h2 {
-  font-family:fantasy;
+  font-family:helvetica;
 }
