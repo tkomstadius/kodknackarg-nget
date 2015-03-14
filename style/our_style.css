@@ -1,7 +1,61 @@
-#top_content {
-  border-color: red; 
+.navbar {
+  background-color: white;
+  height: 80px;
 }
 
-#header {
-  background: pink;
+nav img {
+  height: 50px;
+}
+
+nav li {
+  padding-top: 15px;
+}
+
+div li {
+  display: inline;
+}
+
+.container {
+  display: block;
+}
+
+.intro {
+  background: url(../graphics/bakgrund1.png) no-repeat bottom center scroll;
+  height: 1500px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.intro .container {
+  position: relative;
+  top: 100px;
+}
+
+.intro-text li {
+  display: inline;
+}
+
+.greeting {
+  font-size: 50px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  color: white
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+header .intro-text {
+  display: block;
+}
+#logo-top {
+}
+
+.new-page {
+
 }
