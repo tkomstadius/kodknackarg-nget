@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		
 		<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
+
 		<link rel="stylesheet" type="text/css" href="style/our_style.css"/>
 		<script src="javascript/employers.js"></script>
 		<title>Upp till kamp!</title>
@@ -89,12 +90,108 @@
 		<br><br>
 		<span id ="searchResult"></span>
 		<button onClick="getAds()" id ="button1">Show me some jobs!</button>		
+
+		<link rel="stylesheet" type="text/css" href="style/index_style.css"/>
+		<title>Incognito</title>
+	</head>
+	
+	<body id="page-top" class="index">
+
+		<!-- NAVIGATION -->
+		<nav class="navbar navbar-fixed-top">
+			<div class="container">
+
+				<!-- brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header page-scroll">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#page-top">
+						<img id="logo-top" src="graphics/logga.png"/>
+					</a>
+				</div>
+
+				<!-- collect the nav links, forms and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="hidden">
+							<a href="#page-top"></a>
+						</li>
+						<!-- to link somwhere on the same page
+						<li class="page-scroll">
+							<a href="#sok">Sök jobb</a>
+						</li> -->
+						<li class="new-page">
+							<a href="pages/search_job.html">Sök jobb</a>
+						</li>
+						<li class="new_page">
+							<a href="pages/buisness.html">Företag</a>
+						</li>
+						<li class="new_page">
+							<a href="pages/login.html">Logga in</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- HEADER -->
+		<header class="intro">
+			<div class="jumbotron">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="intro-text">
+							<div id="greeting">
+								<img src="graphics/vemeru.png" width="27.5%">
+							</div>
+								<a href="pages/search_job.html">
+									<div id="get-job"></div>										
+								</a>
+								<a href="pages/buisness.html">
+									<div id="recruit"></div>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- INFO OM JÄMNSTÄLLDHET -->
+		<section id="process">
+			<div class="container">
+				<div class="row">
+					<div id="equality" class="col-lg-4">
+						<h2>JÄMSTÄLLDHET GENOM RÄTTVIS REKRYTERING</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div id="equality" class="col-lg-8">
+						<p>Vi på Incognito anser att den bästa vägen till en mer jämlik arbetsmarknad är att göra en förändring av hur vi i samhället arbetar med rekrytering. Genom att filtrera bort identifierande information om till exempel kön, ålder samt etnisk eller social bakgrund vill vi motverka diskriminering i både dess medvetna och omedvetna form. Att låta det första steget i rekryteringsprocessen 
+						<br>
+						Vi strävar efter att vara en del av den förändring vi vill se i samhället, följ med oss på resan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+
 	</body>
+	
 	<footer>
 		<script src="javascript/databaseHandler.js"></script>
 		
 		<script src="javascript/getData.js"></script>
 
 	</footer>
+
 	
 </html>
+
+</html>
+
+
+

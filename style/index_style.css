@@ -1,0 +1,92 @@
+.navbar {
+  background-color: white;
+  height: 80px;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav li {
+  padding-top: 15px;
+}
+
+div li {
+  display: inline;
+}
+
+.container {
+  display: block;
+}
+
+.jumbotron {
+  background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.intro-buttons {
+  display: inline;
+}
+
+header {
+  text-align: center;
+  color: white
+}
+
+header .container {
+  padding-top: 100px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+header .intro-text {
+  display: block;
+  padding-top: 300px;
+}
+
+#greeting {
+  position: center;
+  padding-bottom: 40px;
+}
+
+#get-job {
+  content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
+
+#get-job:hover {
+  content: url(../graphics/Knappar/knapp_jag_vill_jobba_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
+
+#recruit {
+  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-left: 6px; 
+}
+
+#recruit:hover {
+  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-left: 6px; 
+}
+
+#equality {
+  display: block;
+  margin-top: 5px;
+}
