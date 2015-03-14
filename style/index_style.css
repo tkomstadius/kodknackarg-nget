@@ -15,10 +15,6 @@ div li {
   display: inline;
 }
 
-.container {
-  display: block;
-}
-
 .jumbotron {
   background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 1000px;
@@ -26,6 +22,7 @@ div li {
   position: center;
   padding-bottom: 0;
   margin-bottom: 0;
+  display: block;
 }
 
 .intro-buttons {
@@ -90,13 +87,26 @@ header .intro-text {
   margin-top: 5px;
 }
 
+#description {
+  font-size: 18px;
+}
+
 .process {
-  background: url(../graphics/Bakgrund/bakgrund3_blå.png) no-repeat bottom center scroll;
+  background: url(../graphics/Bakgrund/bakgrund_blå_kort.png) no-repeat bottom center scroll;
   position:absolute;
   left:0px;
   width:100%;
-  height:1000px;
+  height:100%;
   overflow:auto;
-  padding-bottom: 4%;
-  margin-bottom: 14%;
+  display: block;
+  padding-top: 40px;
+  margin-top: 15%;
+  padding-top: 10%;
+}
+
+.path {
+  content: url(../graphics/Process/processen_hela_vit.png) no-repeat center;
+  position: center;
+  display: inline-block;
+  max-width: 60%;
 }
