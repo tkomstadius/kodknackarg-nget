@@ -1,3 +1,4 @@
+/*Buisness view css*/
 .navbar {
   background-color: white;
   height: 80px;
@@ -13,22 +14,6 @@ nav li {
 
 div li {
   display: inline;
-}
-
-#top {
-  font-weight: bold
-}
-
-#top:link {
-  color: black;
-}
-
-#top:hover {
-  background-color: rgb(217, 136, 34);
-}
-
-#top:visited {
-  color: black;
 }
 
 .jumbotron {
@@ -62,9 +47,38 @@ header .intro-text {
 }
 
 #greeting {
-  position: center;
+  text-align: left;
+  margin-left: 50px;
   padding-bottom: 40px;
+  font-size: 20px;
 }
+
+#content4 { 
+  overflow:auto; 
+  width: 1000px; 
+  margin-left: 50px;
+   column-gap: 1px;
+  /*background: gray; */
+} 
+
+#left { 
+  width: 40%; 
+  margin:5px; 
+  padding: 1em; 
+  background: white; 
+  /*border: 1px solid black; */
+} 
+
+#right { 
+  width: 40%; 
+  margin:5px; 
+  padding: 1em; 
+  background: white; 
+  border: 1px solid black; 
+} 
+
+#left  { float:left;  }
+#right { float:right; } 
 
 #get-job {
   content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
@@ -102,6 +116,7 @@ header .intro-text {
   display: block;
   margin-top: 5px;
   margin-bottom: 5%;
+  margin-left: 50px;
 }
 
 #description-e {
