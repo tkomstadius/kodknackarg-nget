@@ -5,6 +5,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="style/our_style.css"/>
+		<script src="javascript/employers.js"></script>
 		<title>Upp till kamp!</title>
 	</head>
 	<body>
@@ -13,6 +14,12 @@
 		<p id="lanChoose"></p>
       <!-- Choose län, using databaseHandler.js--> 
       <!-- TODO: do it better with a loop -->
+      	
+  <!-- //     		var a = "lan";
+		// 	var b = "sokdata";
+		// 	getDataBase(a, b); -->
+	
+
    		<select id="lanDropDown" onchange="getIndexLan()"> 
 			  <option id="1">0</option>
 			  <option id="2">0</option>
@@ -38,6 +45,7 @@
 			  <option id="22">0</option>
 
 		</select>
+
 		<!-- Choose yrke -->
 		<p id="yrkeChoose"></p>
 		<select id="yrkeDropDown" onchange="getIndexYrke()"> 
@@ -76,6 +84,7 @@
 			var x = document.getElementById("yrkeDropDown").value;
 			document.getElementById("yrkeChoose").innerHTML = "You selected: " + x;
 		}
+	
 		</script>
 		<br><br>
 		<span id ="searchResult"></span>
@@ -84,10 +93,10 @@
 		<!-- STATISTICS FOR DIVERSITY -->
 		<div id="diversity"></div>	
 	</body>
-	<footer>
+	<footer>	
 		<script src="javascript/databaseHandler.js"></script>
 		<script src="javascript/getData.js"></script>
 		<script src="javascript/getDiversity.js"></script>
-
 	</footer>
+	
 </html>

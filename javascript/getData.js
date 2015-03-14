@@ -24,7 +24,8 @@ function getAds(){
 		toDisplay = "<br><br><h3>Jobb som passar dina kriterier</h3><br><br>";
 		//console.log(x.length);
 		//for (i=0;i<x.length;i++)
-		for(i=1; i<4; i++)
+		// displays the place ads
+		for(i=1; i<10; i++)
 		  { 
 		  	toDisplay += "<a href='javascript:matchAd(" +i+ ")'>";
 		  	toDisplay += x[i].getElementsByTagName("annonsrubrik")[0].childNodes[0].nodeValue+ ", Företag: ";
