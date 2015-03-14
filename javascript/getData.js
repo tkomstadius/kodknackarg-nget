@@ -17,10 +17,11 @@ function getAds(){
 
 	var toDisplay; 
 	
-	if(document.getElementById("aliceContent").innerHTML == ""){
+	if(document.getElementById("searchResult").innerHTML == ""){
+		document.getElementById("button1").innerHTML = "Take me back!";
 		console.log("den e noll");
 		var x=xmlDoc.getElementsByTagName("matchningdata");
-		toDisplay = "<br><br>Lista<br><br>";
+		toDisplay = "<br><br><h3>Jobb som passar dina kriterier</h3><br><br>";
 		//console.log(x.length);
 		//for (i=0;i<x.length;i++)
 		for(i=1; i<4; i++)
@@ -31,10 +32,11 @@ function getAds(){
 		  	toDisplay += "</a><br><br>";
 		  	}
 
-		document.getElementById("aliceContent").innerHTML = toDisplay;
+		document.getElementById("searchResult").innerHTML = toDisplay;
 	}
 	else {
-		document.getElementById("aliceContent").innerHTML = "";
+		document.getElementById("button1").innerHTML = "Show me some jobs!";
+		document.getElementById("searchResult").innerHTML = "";
 		console.log("den e nånting");
 	}
 	

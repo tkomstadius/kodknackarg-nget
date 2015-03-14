@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html ng-app="sida">
+<html>
 	<head>
 		<meta charset="utf-8"/>
-		<!-- Här skriver Kajsa-->
+		
 		<link rel="stylesheet" type="text/css" href="style/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="style/our_style.css"/>
-
-		<!-- Här skriver Alice-->
 		<title>Upp till kamp!</title>
 	</head>
 	<body>
-		<h1> Hello testing </h1>
+		<h1> Incognito Job Search </h1>
 
 		<p id="lanChoose"></p>
-
-      <!-- Choose län--> 
+      <!-- Choose län, using databaseHandler.js--> 
       <!-- TODO: do it better with a loop -->
    		<select id="lanDropDown" onchange="getIndexLan()"> 
 			  <option id="1">0</option>
@@ -41,6 +38,7 @@
 			  <option id="22">0</option>
 
 		</select>
+		<!-- Choose yrke -->
 		<p id="yrkeChoose"></p>
 		<select id="yrkeDropDown" onchange="getIndexYrke()"> 
 			  <option id="23">0</option>
@@ -66,32 +64,25 @@
 			  <option id="43">0</option>
 			  <option id="44">0</option>
 			  <option id="45">0</option>
-
 		</select>
 		
-		<!-- index for län -->
+		<!-- index for län and yrke -->
 		<script>
 		function getIndexLan() {
 			    var x = document.getElementById("lanDropDown").value;
 			    document.getElementById("lanChoose").innerHTML = "You selected: " + x;
-			}
+		}
 		function getIndexYrke(){
 			var x = document.getElementById("yrkeDropDown").value;
 			document.getElementById("yrkeChoose").innerHTML = "You selected: " + x;
 		}
 		</script>
-		
+		<br><br>
+		<span id ="searchResult"></span>
+		<button onClick="getAds()" id ="button1">Show me some jobs!</button>		
 	</body>
 	<footer>
 		<script src="javascript/databaseHandler.js"></script>
-
-		<!-- Här skriver Kajsa-->
-		<span id="content"></span>
-
-
-		<!-- Här skriver Alice-->
-		<span id ="aliceContent"></span>
-		<button onClick="getAds()">Hello</button>
 	</body>
 	<footer>
 		<!-- Här skriver Kajsa-->
