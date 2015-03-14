@@ -1,3 +1,9 @@
+body {
+    height:7000px;
+    
+}
+
+
 .navbar {
   background-color: white;
   height: 80px;
@@ -20,8 +26,18 @@ div li {
 }
 
 .jumbotron {
-  background: url(../graphics/Bakgrund/bakgrund_bla.png) no-repeat bottom center scroll;
-  height: 900px;
+    display: inline-block;
+  background: url(../graphics/Bakgrund/bakgrund_jobb.png) no-repeat bottom center scroll;
+  height: 400px;
+  width: 100%;
+  background-repeat: no-repeat;
+  position: center;
+}
+
+.jumbo {
+    display: inline-block;
+  background: url(../graphics/Bakgrund/bakgrund_bl%C3%A5_kort.png) no-repeat bottom center scroll;
+  height: 400px;
   width: 100%;
   background-repeat: no-repeat;
   position: center;
