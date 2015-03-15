@@ -89,6 +89,11 @@ header .intro-textinfo {
 	padding: 3px;
 }
 
+#sokande {
+    width: 500px;
+	padding: 3px;
+}
+
 #get-job {
   content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
   position: center;
