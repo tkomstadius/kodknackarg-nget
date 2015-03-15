@@ -23,10 +23,6 @@ div li {
   color: black;
 }
 
-#top:hover {
-  background-color: rgb(217, 136, 34);
-}
-
 #top:visited {
   color: black;
 }

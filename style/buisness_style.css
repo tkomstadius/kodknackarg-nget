@@ -23,10 +23,6 @@ div li {
   color: black;
 }
 
-#top:hover {
-  background-color: rgb(217, 136, 34);
-}
-
 #top:visited {
   color: black;
 }
@@ -70,16 +66,21 @@ header .intro-text {
   content: url(../graphics/Knappar/knapp_registrera.png) no-repeat center;
   position: center;
   display: inline-block;
-  max-width: 13%;
+  max-width: 16%;
   padding-left: 6px; 
 }
 
 #recruit:hover {
-  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera_hover.png);
+  content: url(../graphics/Knappar/knapp_registrera_hover.png);
   position: center;
   display: inline-block;
-  max-width: 13%;
+  max-width: 16%;
   padding-left: 6px; 
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(../graphics/montserrat/Montserrat-Regular.otf);
 }
 
 #headline-e {
@@ -126,6 +127,7 @@ header .intro-text {
 
 #footer {
   height: 15%;
+  position: fixed;
 }
 
 .btn {
