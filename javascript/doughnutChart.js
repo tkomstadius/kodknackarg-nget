@@ -12,7 +12,7 @@
 
 // // And for a doughnut chart
 // var myDoughnutChart = new Chart(ctx[1]).Doughnut(data,options);
-
+// console.log("utanför drawDoughnut");
 
 function drawDoughnut()
 {
@@ -82,9 +82,9 @@ function drawDoughnut2(){
 
 		}
 
-	var ctx = document.getElementById("myChart2").getContext("2d");
+	// var ctx = document.getElementById("myChart2").getContext("2d");
 
-	var myDoughnutChart = new Chart(ctx).Doughnut(pieData, {percentageInnerCutout : 88}, pieOptions);
+	// var myDoughnutChart = new Chart(ctx).Doughnut(pieData, {percentageInnerCutout : 88}, pieOptions);
 }
 
 			
