@@ -66,8 +66,13 @@ header .intro-textinfo {
 #greeting {
   text-align: left;
   margin-left: 50px;
-  padding-bottom: 40px;
+  padding-bottom: 5px;
+    padding-left: 300px;
   font-size: 40px;
+}
+
+#annons {
+padding-left: 330px;
 }
 
 #content4 { 
@@ -99,11 +104,13 @@ header .intro-textinfo {
 
 #logo-toppen {
 	padding: 3px;
+    width: 800px;
 }
 
 #sokande {
     width: 500px;
 	padding: 3px;
+   
 }
 
 #get-job {
