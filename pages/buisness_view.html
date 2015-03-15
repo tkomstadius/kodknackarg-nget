@@ -6,8 +6,11 @@
     <link rel="stylesheet" type="text/css" href="../style/buisness_styleView.css"/>
 
     <!-- charts -->
-    <script src="../javascript/chartDiagram.js"></script>
+     
+    <script src="../javascript/Chart.js"></script>
     <script src="../javascript/ChartNew.js"></script>
+    // <!-- <script src="../javascript/doughnutChart.js"></script> -->
+    
     <title>Incognito</title>
   </head>
   
@@ -49,15 +52,20 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-lg-12">
-            <div class="intro-text">
+            <div class="intro-textinfo">
             	<!-- Fixar en bild med aktiva annonser -->
+            	<!-- Press one of the adds for more information -->
               <div id="greeting">
-                Aktiva annonser:
+                Aktiva annonser
               </div>
-              <!-- Press one of the adds for more information -->
-                <a href="#valdAnnons">
-                  <p>DEN HÄR ANNONSEN</p>                    
-                </a>
+                <div id="annons">
+	                <a class="navbar-brand" href="#valdAnnons">
+			            <img id="logo-toppen" src="../graphics/Annonser/annons1_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annons2_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annons3_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annonser_gamla.png"/>
+			         </a>
+		     	</div>
               </ul>
             </div>
           </div>
@@ -111,16 +119,8 @@
           <!-- this is where the blue part starts -->
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
-          	<span>
 	          	<canvas id="myChart" width="400" height="400"></canvas>
 
-	   
-	  <!--  // //        	// Get the context of the canvas element we want to select
-				// var ctx = document.getElementById("myChart").getContext("2d");
-				// var myNewChart = new Chart(ctx).PolarArea(data); -->
-
-
-			</span>
           </div>
         </div>
       </div>
@@ -137,8 +137,10 @@
           </div>
         </div>
       </div>
-    </section>
-
+    <!-- </section> -->
+    <!-- // <script src="js/doughnutChart.js"></script> -->
+    <script src="../javascript/doughnutChart.js"></script>
+  <!-- // <script src="js/barChart.js"></script> -->
     <script src="/kodknackarna/javascript/databaseHandler.js"></script>
     
   </body>
