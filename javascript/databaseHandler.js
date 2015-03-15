@@ -10,14 +10,15 @@ if (window.XMLHttpRequest)
 	  }
 
 // var url = "http://api.arbetsformedlingen.se/platsannons/soklista/kommuner?lanid=10.xml";
-xmlhttp.open("GET","javascript/database/lan.xml",false);
+xmlhttp.open("GET","/kodknackarna/database/lan.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
 
 console.log(xmlDoc);
 // Search function for län.
 var x1=xmlDoc.getElementsByTagName("sokdata");
-var countLan = 1;
+document.getElementById(1).innerHTML = "Välj ett län";
+var countLan = 2;
 
 for (i=0;i<x1.length;i++)
   { 
@@ -25,19 +26,20 @@ for (i=0;i<x1.length;i++)
   	document.getElementById(countLan).innerHTML = x1[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
   	countLan++;
   }
-// xmlhttp2.open("GET","database/yrkesomraden.xml", false);
-// xmlhttp2.send();
-// xmlDoc2 = xmlhttp2.responseXML;
+ xmlhttp2.open("GET","/kodknackarna/database/yrkesomraden.xml", false);
+ xmlhttp2.send();
+ xmlDoc2 = xmlhttp2.responseXML;
 
-// // Search function for yrkesomraden
-// var y = xmlDoc2.getElementsByTagName("sokdata");
-// var countYrke = 23; 
-// for (i=0;i<y.length;i++)
-//   { 
-//   	// console.log(countYrke);
-//   	document.getElementById(countYrke).innerHTML = y[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
-//   	countYrke++;
-//   }
+ // Search function for yrkesomraden
+ var y = xmlDoc2.getElementsByTagName("sokdata");
+ document.getElementById(24).innerHTML = "Välj ett yrkesområde";
+ var countYrke = 25; 
+ for (i=0;i<y.length;i++)
+   { 
+   	// console.log(countYrke);
+   	document.getElementById(countYrke).innerHTML = y[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
+   	countYrke++;
+   }
 
 
   
