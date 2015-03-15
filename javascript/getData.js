@@ -24,7 +24,7 @@ function getAds(){
 		for(i=1; i<10; i++)
 		  { 
 		  	//toDisplay += "<a href='javascript:matchAd()'>";
-		  	toDisplay += "<a href='#ad' onclick='matchAd()'>"
+		  	toDisplay += "<a href='javascript:matchAd()'>"
 		  	toDisplay += x[i].getElementsByTagName("annonsrubrik")[0].childNodes[0].nodeValue+ ", Företag: ";
 		  	toDisplay += x[i].getElementsByTagName("arbetsplatsnamn")[0].childNodes[0].nodeValue;
 		  	toDisplay += "</a><br><br>";
@@ -34,7 +34,7 @@ function getAds(){
 			
 }
 function getButton(){
-	var display = "<a href='#process'><div id='search' onclick='getAds()''></div></a>";							
+	var display = "<a href='#searchList'><div id='search' onclick='getAds()''></div></a>";							
 	document.getElementById("showButton").innerHTML = display;
 }
 function matchAd(){
