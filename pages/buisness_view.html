@@ -5,11 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../style/buisness_styleView.css"/>
 
-    <!-- charts -->
-     
-    <script src="../javascript/Chart.js"></script>
-    <script src="../javascript/ChartNew.js"></script>
-    // <!-- <script src="../javascript/doughnutChart.js"></script> -->
+    <!-- charts -->    
+    <script src="Chart.min.js"></script>
     
     <title>Incognito</title>
   </head>
@@ -41,6 +38,7 @@
             </li>
             <li class="new_page">
               <a href="login.html">Logga in</a>
+
             </li>
           </ul>
         </div>
@@ -52,15 +50,20 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-lg-12">
-            <div class="intro-text">
+            <div class="intro-textinfo">
             	<!-- Fixar en bild med aktiva annonser -->
+            	<!-- Press one of the adds for more information -->
               <div id="greeting">
-                Aktiva annonser:
+                Aktiva annonser
               </div>
-              <!-- Press one of the adds for more information -->
-                <a href="#valdAnnons">
-                  <p>DEN HÄR ANNONSEN</p>                    
-                </a>
+                <div id="annons">
+	                <a class="navbar-brand" href="#valdAnnons">
+			            <img id="logo-toppen" src="../graphics/Annonser/annons1_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annons2_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annons3_kort.png"/>
+			            <img id="logo-toppen" src="../graphics/Annonser/annonser_gamla.png"/>
+			         </a>
+		     	</div>
               </ul>
             </div>
           </div>
@@ -114,7 +117,27 @@
           <!-- this is where the blue part starts -->
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
-	          	<canvas id="myChart" width="400" height="400"></canvas>
+	          	<canvas id="countries" width="600" height="400"></canvas>
+          <script>
+            
+          var pieData = [
+            {
+              value: 73,
+              color:"#1b4e63"
+            },
+            {
+              value : 27,
+              color : "#d1833a"
+            },
+          ];
+          var pieOptions = {
+          segmentShowStroke : false,
+          animateScale : true
+          }
+          var countries= document.getElementById("countries").getContext("2d");
+          new Chart(countries).Pie(pieData, pieOptions);
+
+          </script>
 
           </div>
         </div>
@@ -122,20 +145,6 @@
     </section>
     
     <!-- FOOTER -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-                
-            <a href="#page-top"><p>To the top</p></a>
-
-          </div>
-        </div>
-      </div>
-    <!-- </section> -->
-    <!-- // <script src="js/doughnutChart.js"></script> -->
-    <script src="../javascript/doughnutChart.js"></script>
-  <!-- // <script src="js/barChart.js"></script> -->
     <script src="/kodknackarna/javascript/databaseHandler.js"></script>
     
   </body>

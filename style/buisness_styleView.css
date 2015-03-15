@@ -46,11 +46,16 @@ header .intro-text {
   padding-top: 300px;
 }
 
+header .intro-textinfo {
+  display: block;
+  padding-top: 100px;
+}
+
 #greeting {
   text-align: left;
   margin-left: 50px;
   padding-bottom: 40px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 #content4 { 
@@ -79,6 +84,10 @@ header .intro-text {
 
 #left  { float:left;  }
 #right { float:right; } 
+
+#logo-toppen {
+	padding: 3px;
+}
 
 #get-job {
   content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
@@ -129,7 +138,6 @@ header .intro-text {
   left:0px;
   width:100%;
   height:100%;
-  overflow:auto;
   display: block;
   padding-top: 40px;
   margin-top: 15%;
@@ -147,6 +155,35 @@ header .intro-text {
   bottom: 15%;
   padding-bottom: 10%;
 }
+
+.black_overlay{
+	    display: none;
+	    position: absolute;
+	    top: 0%;
+	    left: 0%;
+	    width: 100%;
+	    height: 100%;
+	    background-color: black;
+	    z-index:1001;
+	    -moz-opacity: 0.8;
+	    opacity:.80;
+	    filter: alpha(opacity=80);
+}
+
+.white_content {
+	    display: none;
+	    position: absolute;
+	    top: 25%;
+	    left: 25%;
+	    width: 50%;
+	    height: 50%;
+	    padding: 16px;
+	    border: 16px solid orange;
+	    background-color: white;
+	    z-index:1002;
+	    overflow: auto;
+}
+
 
 #headline-p {
   display: block;
