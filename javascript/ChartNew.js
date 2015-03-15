@@ -34,7 +34,7 @@
  *     
  */
 
-console.log("i chart");
+
  // non standard functions;
 console.log("i ChartNew");
 if (typeof String.prototype.trim !== 'function') {
@@ -47,6 +47,7 @@ if (typeof String.prototype.trim !== 'function') {
 if (!Array.prototype.indexOf) {
     Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
         "use strict";
+        console.log("i if");
         if (this == null) {
             throw new TypeError();
         }
@@ -101,7 +102,7 @@ if (!Array.prototype.indexOf) {
 
 function roundToWithThousands(config, num, place) {
     var newval=1*unFormat(config, num);
-
+    console.log("1: i roundToWithThousands");
     if(typeof(newval)=="number" && place !="none"){
       if(place<=0){
         var roundVal=-place;
@@ -118,7 +119,7 @@ function roundToWithThousands(config, num, place) {
 } ;
 
 function unFormat(config, num) {
-
+	console.log("2: i unFormat");
     if((config.decimalSeparator!="." || config.thousandSeparator !="") && typeof(num)=="string") {
       var v1=""+num;
       if(config.thousandSeparator!=""){
@@ -148,6 +149,7 @@ Distributed by Hypergurl
 var cachebis = {};
 
 function fmtChartJSPerso(config,value,fmt){
+  console.log("3: i fmtChartJSPerso");
   switch(fmt){
     case "SampleJS_Format":
       if(typeof(value)=="number")return_value="My Format : " + value.toString()+ " $";
@@ -166,7 +168,7 @@ function fmtChartJSPerso(config,value,fmt){
 };
 
 function fmtChartJS(config,value,fmt){
-
+	console.log("4: i fmtChartJS");
   var return_value;
   if(fmt=="notformatted") {
     return_value=value;
