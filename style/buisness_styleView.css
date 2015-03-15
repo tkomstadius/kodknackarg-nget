@@ -46,11 +46,16 @@ header .intro-text {
   padding-top: 300px;
 }
 
+header .intro-textinfo {
+  display: block;
+  padding-top: 100px;
+}
+
 #greeting {
   text-align: left;
   margin-left: 50px;
   padding-bottom: 40px;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 #content4 { 
@@ -79,6 +84,10 @@ header .intro-text {
 
 #left  { float:left;  }
 #right { float:right; } 
+
+#logo-toppen {
+	padding: 3px;
+}
 
 #get-job {
   content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;

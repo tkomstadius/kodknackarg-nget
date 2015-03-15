@@ -39,16 +39,11 @@ div li {
   position: center;
 }
 
-/* {
-  position: relative;
-  top: 100px;
-}*/
-
 .intro-buttons {
   display: inline;
 }
 
-.greeting {
+.search-field {
   display: inline;
   font-size: 50px;
   text-align: center;
@@ -72,59 +67,26 @@ header .container {
   padding-bottom: 50px;
 }
 
-header .intro-text {
+header .intro-text 
   display: block;
   padding-top: 100px;
   padding-left: 10px;
 }
 
 #greeting {
-  padding-bottom: 40px;
-  padding-top: 100px;
+  padding-top: 400%;
 }
 
-#get-job {
-  content: url(../graphics/Knappar/knapp_jag_vill_jobba.png) no-repeat center;
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-right: 6px;
-}
-
-#get-job:hover {
-  content: url(../graphics/Knappar/knapp_jag_vill_jobba_hover.png);
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-right: 6px;
 }
 #search {
   content: url(../graphics/Knappar/knapp_sok.png);
-  position: relative;
   max-width: 13%;
   padding-right: 6px;
 }
 #search:hover {
   content: url(../graphics/Knappar/knapp_sok_hover.png);
-  position: left;
   max-width: 13%;
   padding-right: 6px;
-}
-
-#recruit {
-  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-left: 6px; 
-}
-
-#recruit:hover {
-  content: url(../graphics/Knappar/knapp_vi_vill_rekrytera_hover.png);
-  position: center;
-  display: inline-block;
-  max-width: 13%;
-  padding-left: 6px; 
 }
 
 /*Sida för jobbsökande*/
@@ -136,6 +98,7 @@ header .intro-text {
 h2 {
   font-family:helvetica;
 }
+
 #lanDropDown {
   color: black;
   font-size: 25px;
@@ -148,9 +111,13 @@ h2 {
   width: 300px;
   border-radius: 10px;
 }
-#dropDown1 {
+
+#drop-place {
   display: inline;
+  margin-top: 100px;
+  padding-top: 100px;
 }
-#dropDown2 {
+
+#drop-prof {
   display: inline;
 }
