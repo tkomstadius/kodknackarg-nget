@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 .navbar {
   background-color: white;
   height: 80px;
@@ -7,12 +15,8 @@ nav img {
   height: 50px;
 }
 
-nav li {
-  padding-top: 15px;
-}
-
-div li {
-  display: inline;
+header {
+  height: 1000px;
 }
 
 #top {
@@ -33,7 +37,7 @@ div li {
 
 .jumbotron {
   background: url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
-  height: 900px;
+  height: 1000px;
   width: 100%;
   background-repeat: no-repeat;
   position: center;
@@ -44,10 +48,10 @@ div li {
 }
 
 .search-field {
-  display: inline;
+  display: block;
   font-size: 50px;
-  text-align: center;
-    max-width:  width: 300px;
+  text-align: left;
+  max-width:  90%
 }
 
 .form-group {
@@ -62,31 +66,25 @@ header {
   color: white
 }
 
-header .container {
-  padding-top: 100px;
-  padding-bottom: 50px;
-}
-
-header .intro-text 
-  display: block;
-  padding-top: 100px;
-  padding-left: 10px;
-}
-
 #greeting {
   padding-top: 400%;
 }
 
-}
+
 #search {
   content: url(../graphics/Knappar/knapp_sok.png);
-  max-width: 13%;
-  padding-right: 6px;
+  height: 30px;
+  position: center;
+  display: inline-block;
+  padding-right: 39%
 }
+
 #search:hover {
   content: url(../graphics/Knappar/knapp_sok_hover.png);
-  max-width: 13%;
-  padding-right: 6px;
+  height: 30px;
+  position: center;
+  display: inline-block;
+  padding-right: 39%;
 }
 
 /*Sida för jobbsökande*/
@@ -101,23 +99,50 @@ h2 {
 
 #lanDropDown {
   color: black;
-  font-size: 25px;
+  font-size: 18px;
   width: 300px;
   border-radius: 10px;
+  left: 0;
 }
 #yrkeDropDown {
   color: black;
-  font-size: 25px;
+  font-size: 18px;
   width: 300px;
   border-radius: 10px;
 }
 
 #drop-place {
-  display: inline;
-  margin-top: 100px;
-  padding-top: 100px;
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: 10px;
 }
 
 #drop-prof {
-  display: inline;
+  display: inline-block;
 }
+
+#addResult {
+  padding-left: 45%;
+}
+
+#searchList {
+  display: block;
+  text-align: left;
+  color: black;
+  padding-left: 15%;
+}
+
+#searchResult {
+  display: block;
+  position: absolute;
+  color: black;
+  padding-bottom: 15%;
+}
+
+#adResult {
+  display: block;
+  padding-top: 20%;
+  padding-right: 5%;
+}
+
