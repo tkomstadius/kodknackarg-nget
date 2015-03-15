@@ -117,7 +117,9 @@
           <!-- this is where the blue part starts -->
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
-	          	<canvas id="countries" width="600" height="400"></canvas>
+	          	<canvas id="diversity" width="600" height="400"></canvas>
+              <canvas id="age" width="600" height="400"></canvas>
+              <canvas id="etnicity" width="600" height="400"></canvas>
           <script>
             
           var pieData = [
@@ -134,11 +136,40 @@
           segmentShowStroke : false,
           animateScale : true
           }
-          var countries= document.getElementById("countries").getContext("2d");
-          new Chart(countries).Pie(pieData, pieOptions);
+
+          var diversity= document.getElementById("diversity").getContext("2d");
+          new Chart(diversity).Pie(pieData, pieOptions);
+
+          var barData = {
+                labels : ["18-30 år","31-50 år","51-65 år"],
+                datasets : [
+                    {
+                        fillColor : "#1b4e63",
+                        strokeColor : "#163e4f",
+                        data : [485,642,219]
+                    }
+                ]
+            }
+            var age= document.getElementById("age").getContext("2d");
+            new Chart(age).Bar(barData);
+
+                var barData2 = {
+                labels : ["Född i Sverige","Född inom Europa","Född utanför Europa"],
+                datasets : [
+                    {
+                        fillColor : "#1b4e63",
+                        strokeColor : "#163e4f",
+                        data : [1084,402,219]
+                    }
+                ]
+            }
+            var etnicity= document.getElementById("etnicity").getContext("2d");
+            new Chart(etnicity).Bar(barData2);
 
           </script>
-
+          <div id="dataText">
+              <h2>Könsfördelning, åldersfördelning och etniskt ursprung inom din branch i ditt län</h2>
+          </div>
           </div>
         </div>
       </div>
