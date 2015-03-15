@@ -31,15 +31,16 @@
               <a href="#page-top"></a>
             </li>
             <li class="new-page">
-              <a href="search_job.html">Sök jobb</a>
+              <a id="top" href="search_job.html">Sök jobb</a>
             </li>
             <li class="new_page">
-              <a href="buisness.html">Företag</a>
+              <a id="top" href="buisness.html">Företag</a>
             </li>
+
             <li class="log_in">
-            	<a onclick="document.getElementById('light').style.display='block'">Logga in </a>
+            	<a onclick="document.getElementById('light').style.display='block'"> Logga in </a>
             </li>
-            
+            <!--Creating a lightbox with login function -->
             <div id="light" class="white_content">
             	 <fieldset class="form-group">
                       <p id="description-r">Användarnamn</p><input type="text" class="form-control" placeholder="Person-/Org.nummer" title="anvandarnamn"/>
@@ -56,10 +57,8 @@
 	            <button onclick="document.getElementById('light').style.display='none';
 	            	document.getElementById('fade').style.display='none'"> Stäng </button> 
 
-	        </div> 
+	           </div> 
           
-
-            <!-- <div id="fade" class="black_overlay"></div> -->
           </ul>
         </div>
       </div>

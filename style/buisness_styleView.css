@@ -16,6 +16,18 @@ div li {
   display: inline;
 }
 
+#top {
+  font-weight: bold
+}
+
+#top:link {
+  color: black;
+}
+
+#top:visited {
+  color: black;
+}
+
 .jumbotron {
   background: transparent url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 1000px;
