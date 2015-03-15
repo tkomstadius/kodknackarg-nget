@@ -1,3 +1,11 @@
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
 .navbar {
   background-color: white;
   height: 80px;
@@ -7,12 +15,8 @@ nav img {
   height: 50px;
 }
 
-nav li {
-  padding-top: 15px;
-}
-
-div li {
-  display: inline;
+header {
+  height: 1000px;
 }
 
 #top {
@@ -118,4 +122,27 @@ h2 {
   display: inline-block;
 }
 
+#addResult {
+  padding-left: 45%;
+}
+
+#searchList {
+  display: block;
+  text-align: left;
+  color: black;
+  padding-left: 15%;
+}
+
+#searchResult {
+  display: block;
+  position: absolute;
+  color: black;
+  padding-bottom: 15%;
+}
+
+#adResult {
+  display: block;
+  padding-top: 20%;
+  padding-right: 5%;
+}
 

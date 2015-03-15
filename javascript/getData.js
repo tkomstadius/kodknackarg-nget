@@ -34,7 +34,7 @@ function getAds(){
 			
 }
 function getButton(){
-	var display = "<a href='#process'><div id='search' onclick='getAds()''></div></a>";							
+	var display = "<a href='#searchList'><div id='search' onclick='getAds()''></div></a>";							
 	document.getElementById("showButton").innerHTML = display;
 }
 function matchAd(){
