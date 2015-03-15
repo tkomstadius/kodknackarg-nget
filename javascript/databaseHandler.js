@@ -10,7 +10,7 @@ if (window.XMLHttpRequest)
 	  }
 
 // var url = "http://api.arbetsformedlingen.se/platsannons/soklista/kommuner?lanid=10.xml";
-xmlhttp.open("GET","/kodknackarna/database/lan.xml",false);
+xmlhttp.open("GET","../database/lan.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
 
@@ -26,7 +26,7 @@ for (i=0;i<x1.length;i++)
   	document.getElementById(countLan).innerHTML = x1[i].getElementsByTagName("namn")[0].childNodes[0].nodeValue;
   	countLan++;
   }
- xmlhttp2.open("GET","/kodknackarna/database/yrkesomraden.xml", false);
+ xmlhttp2.open("GET","../database/yrkesomraden.xml", false);
  xmlhttp2.send();
  xmlDoc2 = xmlhttp2.responseXML;
 
