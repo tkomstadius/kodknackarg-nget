@@ -32,7 +32,7 @@ div li {
 }
 
 .jumbotron {
-  background: url(../graphics/Bakgrund/bakgrund_bla.png) no-repeat bottom center scroll;
+  background: url(../graphics/Bakgrund/bakgrund1.png) no-repeat bottom center scroll;
   height: 900px;
   width: 100%;
   background-repeat: no-repeat;
@@ -96,6 +96,20 @@ header .intro-text {
   max-width: 13%;
   padding-right: 6px;
 }
+#search {
+  content: url(../graphics/Knappar/knapp_sok.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
+#search:hover {
+  content: url(../graphics/Knappar/knapp_sok_hover.png);
+  position: center;
+  display: inline-block;
+  max-width: 13%;
+  padding-right: 6px;
+}
 
 #recruit {
   content: url(../graphics/Knappar/knapp_vi_vill_rekrytera.png) no-repeat center;
@@ -121,4 +135,18 @@ header .intro-text {
 
 h2 {
   font-family:helvetica;
+}
+#lanDropDown {
+  color: black;
+  position: center;
+  font-size: 25px;
+  width: 300px;
+  border-radius: 10px;
+}
+#yrkeDropDown {
+  color: black;
+  position: center;
+  font-size: 25px;
+  width: 300px;
+    border-radius: 10px;
 }
