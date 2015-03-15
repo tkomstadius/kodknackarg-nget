@@ -36,10 +36,33 @@
             <li class="new_page">
               <a id="top" href="buisness.html">Företag</a>
             </li>
-            <li class="new_page">
-              <a id="top" href="login.html">Logga in</a>
-
+            <li id="top" class="log_in">
+            	<!-- <a href="login.html">Logga in</a> -->
+            	<a href="javascript:document.getElementById('light').style.display='block'"> Logga in </a>
+            	<!-- <a onclick="document.getElementById('light').style.display='block'";>
+         
+            	</a> -->
             </li>
+            
+            <div id="light" class="white_content">
+            	 <fieldset class="form-group">
+                      <p id="description-r">Användarnamn</p><input type="text" class="form-control" placeholder="Person-/Org.nummer" title="anvandarnamn"/>
+                    </fieldset>
+                 <fieldset class="form-group">
+                      <p id="description-r">Lösenord</p><input type="text" class="form-control" placeholder="*******" title="losenord"/>
+                    </fieldset>
+
+                <!--OK button -->
+                <button onclick="document.getElementById('light').style.display='none';
+	            	document.getElementById('fade').style.display='none'"> OK </button> 
+
+	            <!-- close button -->
+	            <button onclick="document.getElementById('light').style.display='none';
+	            	document.getElementById('fade').style.display='none'"> Stäng </button> 
+
+	        </div> 
+
+            <!-- <div id="fade" class="black_overlay"></div> -->
           </ul>
         </div>
       </div>
@@ -80,12 +103,9 @@
             	<!-- split div in two colloums -->
             	<div id="content4">
             		<!-- left side, information about how many appliers -->
-            		<div id="left">	
-              			<h2>TITELN PÅ TJÄNSTEN</h2>
-            
+            		<div id="left">	            
 					     <div id="searchers">
-					     		Här står den en massa bra information om den
-              					aktuella tjänsten som företaget nyss tryckte på. Antningen hårdkodar vi denna information i en snygg design eller så kör vi en snygg hämtning via databasom som ej har gjorts. Det andra alternativet är mycket mer intressant men kommer antaligen inte att hända!
+					     		<img id="sokande" src="../graphics/Annonser/sokande.png"/>
 					     </div>
 					</div>
 					<!-- right side, information about how many appliers -->
@@ -118,8 +138,8 @@
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
 	          	<canvas id="diversity" width="600" height="400"></canvas>
-              <canvas id="age" width="600" height="400"></canvas>
-              <canvas id="etnicity" width="600" height="400"></canvas>
+              <canvas id="age" width="300" height="250"></canvas>
+              <canvas id="etnicity" width="300" height="250"></canvas>
           <script>
             
           var pieData = [
@@ -174,9 +194,6 @@
         </div>
       </div>
     </section>
-    
-    <!-- FOOTER -->
-    <script src="/kodknackarna/javascript/databaseHandler.js"></script>
     
   </body>
   
