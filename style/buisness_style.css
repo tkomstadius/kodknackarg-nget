@@ -124,8 +124,18 @@ header .intro-text {
   max-width: 70%;
 }
 
-.btn {
-  color: white;
-  background-color: black;
-  margin-top: 2%;
+
+#send {
+  background: url(../graphics/Knappar/knapp_skicka.png) no-repeat;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 43%;
 }
+
+#send:hover { 
+  background: url(../graphics/Knappar/knapp_skicka_hover.png) no-repeat;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 43%;
+}
+
