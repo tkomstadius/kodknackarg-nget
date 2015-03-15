@@ -24,7 +24,7 @@ function getAds(){
 		for(i=1; i<10; i++)
 		  { 
 		  	//toDisplay += "<a href='javascript:matchAd()'>";
-		  	toDisplay += "<a href='#ad' onclick='matchAd()'>"
+		  	toDisplay += "<a href='javascript:matchAd()'>"
 		  	toDisplay += x[i].getElementsByTagName("annonsrubrik")[0].childNodes[0].nodeValue+ ", Företag: ";
 		  	toDisplay += x[i].getElementsByTagName("arbetsplatsnamn")[0].childNodes[0].nodeValue;
 		  	toDisplay += "</a><br><br>";
