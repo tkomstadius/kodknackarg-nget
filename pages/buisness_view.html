@@ -5,10 +5,8 @@
     <link rel="stylesheet" type="text/css" href="../style/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="../style/buisness_styleView.css"/>
 
-    <!-- charts -->
-     
-    <script src="../javascript/Chart.js"></script>
-    <script src="../javascript/ChartNew.js"></script>
+    <!-- charts -->    
+    <script src="Chart.min.js"></script>
     
     <title>Incognito</title>
   </head>
@@ -119,7 +117,27 @@
           <!-- this is where the blue part starts -->
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
-	          	<canvas id="myChart" width="400" height="400"></canvas>
+	          	<canvas id="countries" width="600" height="400"></canvas>
+          <script>
+            
+          var pieData = [
+            {
+              value: 73,
+              color:"#1b4e63"
+            },
+            {
+              value : 27,
+              color : "#d1833a"
+            },
+          ];
+          var pieOptions = {
+          segmentShowStroke : false,
+          animateScale : true
+          }
+          var countries= document.getElementById("countries").getContext("2d");
+          new Chart(countries).Pie(pieData, pieOptions);
+
+          </script>
 
           </div>
         </div>
@@ -127,17 +145,6 @@
     </section>
     
     <!-- FOOTER -->
-    <section id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-                
-            <a href="#page-top"><p>To the top</p></a>
-
-          </div>
-        </div>
-      </div>
-    <script src="../javascript/doughnutChart.js"></script>
     <script src="/kodknackarna/javascript/databaseHandler.js"></script>
     
   </body>
