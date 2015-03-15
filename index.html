@@ -37,9 +37,27 @@
 							<li class="new_page">
 								<a id="top" href="pages/buisness.html">Företag</a>
 							</li>
-							<li class="new_page">
-								<a id="top" href="pages/login.html">Logga in</a>
-							</li>
+							<li id="top" class="log_in">
+				            	<a onclick="javascript:document.getElementById('light').style.display='block'"> 
+				            		Logga in 
+				            	</a>
+				            </li>
+            
+				            <div id="light" class="white_content">
+				            	 <fieldset class="form-group">
+				                      <p id="description-r">Användarnamn</p><input type="text" class="form-control" placeholder="Person-/Org.nummer" title="anvandarnamn"/>
+				                    </fieldset>
+				                 <fieldset class="form-group">
+				                      <p id="description-r">Lösenord</p><input type="text" class="form-control" placeholder="*******" title="losenord"/>
+				                    </fieldset>
+
+				                <!--OK button -->
+				                <button onclick="document.getElementById('light').style.display='none'" href= "pages/buisness_view.html" > OK </button> 
+
+					            <!-- close button -->
+					            <button onclick="document.getElementById('light').style.display='none'"> Stäng </button> 
+					         </div>
+
 						</ul>
 					</div>
 				</div>
