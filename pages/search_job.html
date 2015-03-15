@@ -28,10 +28,6 @@
 						<li class="hidden">
 							<a href="#page-top"></a>
 						</li>
-						<!-- to link somwhere on the same page
-						<li class="page-scroll">
-							<a href="#sok">Sök jobb</a>
-						</li> -->
 						<li class="new-page">
 							<a id="top" href="search_job.html" style="color: rgb(217, 136, 34)">Sök jobb</a>
 						</li>
@@ -51,62 +47,71 @@
 			<div class="jumbotron">
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="intro-text">
-							<div id="greeting">		
-									<select id="lanDropDown" onchange="getButton()"> 
-									  <option id="1" selected disabled>0</option>
-									  <option id="2">0</option>
-									  <option id="3">0</option>
-									  <option id="4">0</option>
-									  <option id="5">0</option>
-									  <option id="6">0</option>
-									  <option id="7">0</option>
-									  <option id="8">0</option>
-									  <option id="9">0</option>
-									  <option id="10">0</option>
-									  <option id="11">0</option>
-									  <option id="12">0</option>
-									  <option id="13">0</option>
-									  <option id="14">0</option>
-									  <option id="15">0</option>
-									  <option id="16">0</option>
-									  <option id="17">0</option>
-									  <option id="18">0</option>
-									  <option id="19">0</option>
-									  <option id="20">0</option>
-									  <option id="21">0</option>
-									  <option id="22">0</option>
-									  <option id="23">0</option>
-									  </select>
-									<br><br>
-									<select id="yrkeDropDown" onchange="getButton()"> 
-									  <option id="24" selected disabled>0</option>
-									  <option id="25">0</option>
-									  <option id="26">0</option>
-									  <option id="27">0</option>
-									  <option id="28">0</option>
-									  <option id="29">0</option>
-									  <option id="30">0</option>
-									  <option id="31">0</option>
-									  <option id="32">0</option>
-									  <option id="33">0</option>
-									  <option id="34">0</option>
-									  <option id="35">0</option>
-									  <option id="36">0</option>
-									  <option id="37">0</option>
-									  <option id="38">0</option>
-									  <option id="39">0</option>
-									  <option id="40">0</option>
-									  <option id="41">0</option>
-									  <option id="42">0</option>
-									  <option id="43">0</option>
-									  <option id="44">0</option>
-									  <option id="45">0</option>
-									</select>
-									<br><br>
-									<span id="showButton"></span>
+						
+					<div id="greeting">	
+						<div id="dropDown1">	
+							<select id="lanDropDown" onchange="getButton()"> 
+							  <option id="1" selected disabled>0</option>
+							  <option id="2">0</option>
+							  <option id="3">0</option>
+							  <option id="4">0</option>
+							  <option id="5">0</option>
+							  <option id="6">0</option>
+							  <option id="7">0</option>
+							  <option id="8">0</option>
+							  <option id="9">0</option>
+							  <option id="10">0</option>
+							  <option id="11">0</option>
+							  <option id="12">0</option>
+							  <option id="13">0</option>
+							  <option id="14">0</option>
+							  <option id="15">0</option>
+							  <option id="16">0</option>
+							  <option id="17">0</option>
+							  <option id="18">0</option>
+							  <option id="19">0</option>
+							  <option id="20">0</option>
+							  <option id="21">0</option>
+							  <option id="22">0</option>
+							  <option id="23">0</option>
+							  </select>
 							</div>
-							</ul>
+							<div id="dropDown2">
+							  <br>
+							<select id="yrkeDropDown" onchange="getButton()"> 
+							  <option id="24" selected disabled>0</option>
+							  <option id="25">0</option>
+							  <option id="26">0</option>
+							  <option id="27">0</option>
+							  <option id="28">0</option>
+							  <option id="29">0</option>
+							  <option id="30">0</option>
+							  <option id="31">0</option>
+							  <option id="32">0</option>
+							  <option id="33">0</option>
+							  <option id="34">0</option>
+							  <option id="35">0</option>
+							  <option id="36">0</option>
+							  <option id="37">0</option>
+							  <option id="38">0</option>
+							  <option id="39">0</option>
+							  <option id="40">0</option>
+							  <option id="41">0</option>
+							  <option id="42">0</option>
+							  <option id="43">0</option>
+							  <option id="44">0</option>
+							  <option id="45">0</option>
+							</select>
+							<br><br>
+						</div>
+						<div id="sokButton">
+							<span id="showButton"></span>
+						</div>	
+					</div>
+					</ul>
+						
+						<div id="searchList">
+							<span id ="searchResult"></span>
 						</div>
 					</div>
 				</div>
@@ -115,7 +120,7 @@
 
 		<br><br>
 		<!-- SECTION, PROCESSEN -->
-		<section id="process">
+<!--		<section id="process">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
@@ -124,7 +129,17 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+		<section id="ad">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<br>
+						<span id ="adResult"></span>
+					</div>
+				</div>
+			</div>
+		</section> 
 	</body>
 	<footer>	
 		<script src="/kodknackarna/javascript/getDiversity.js"></script>

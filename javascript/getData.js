@@ -23,7 +23,8 @@ function getAds(){
 		// displays the place ads
 		for(i=1; i<10; i++)
 		  { 
-		  	toDisplay += "<a href='javascript:matchAd(" +i+ ")'>";
+		  	//toDisplay += "<a href='javascript:matchAd()'>";
+		  	toDisplay += "<a href='#ad' onclick='matchAd()'>"
 		  	toDisplay += x[i].getElementsByTagName("annonsrubrik")[0].childNodes[0].nodeValue+ ", Företag: ";
 		  	toDisplay += x[i].getElementsByTagName("arbetsplatsnamn")[0].childNodes[0].nodeValue;
 		  	toDisplay += "</a><br><br>";
@@ -32,15 +33,16 @@ function getAds(){
 		document.getElementById("searchResult").innerHTML = toDisplay;
 			
 }
-function matchAd(){
-	xmlhttp.open("GET","database/jobb2_data_it_stockholm_chef.xml",false);
-	xmlhttp.send();
-	xmlDoc=xmlhttp.responseXML;
-	var x = xmlDoc.getElementsByTagName("annons"); 
-	console.log(x[0]);
-	alert(x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue);
-}
 function getButton(){
 	var display = "<a href='#process'><div id='search' onclick='getAds()''></div></a>";							
 	document.getElementById("showButton").innerHTML = display;
+}
+function matchAd(){
+	xmlhttp.open("GET","../database/jobb2_data_it_stockholm_chef.xml",false);
+	xmlhttp.send();
+	xmlDoc=xmlhttp.responseXML;
+	var x = xmlDoc.getElementsByTagName("annons"); 
+	//console.log(x[0]);
+	document.getElementById("adResult").innerHTML = x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue;
+	//alert(x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue);
 }
