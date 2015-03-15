@@ -11,15 +11,12 @@ html, body {
   height: 80px;
 }
 
-nav img {
+nav, img {
   height: 50px;
 }
 
-header {
-  height: 1000px;
-}
-
 #top {
+  margin-top: 15px;
   font-weight: bold
 }
 
@@ -137,7 +134,7 @@ h2 {
   display: block;
   position: absolute;
   color: black;
-  padding-bottom: 15%;
+  padding-bottom: 10%;
 }
 
 #adResult {
