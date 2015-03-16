@@ -1,4 +1,4 @@
-function getAds(){
+function getAds() {
 	if (window.XMLHttpRequest)
 	  {// code for IE7+, Firefox, Chrome, Opera, Safari
 	  xmlhttp=new XMLHttpRequest();
@@ -43,6 +43,8 @@ function matchAd(){
 	xmlDoc=xmlhttp.responseXML;
 	var x = xmlDoc.getElementsByTagName("annons"); 
 	//console.log(x[0]);
-	document.getElementById("adResult").innerHTML = x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue;
+    var display = x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue;
+    display = "<img id='logo-top' src='../graphics/Annonser/experis.png>";
+	document.getElementById("adResult").innerHTML = display;
 	//alert(x[0].getElementsByTagName("annonstext")[0].childNodes[0].nodeValue);
 }

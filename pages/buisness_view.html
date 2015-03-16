@@ -106,13 +106,8 @@
 					</div>
 					<!-- right side, information about how many appliers -->
 					<div id="right">
-						<h2>INFO OM SÖKANDE NR X</h2>
 					     <div id="infoSearchers">
-					     		OCH HÄR KOMMER EN MASSA INFORMATION OM EN SPECIFIK
-					     		ANSÖKARE. DEN HÄR TEXTEN SKA HA FIN UTFORMNING OCH 
-					     		ÄVEN INNEHÅLLA INFORMATION OM DEN ANSÖKANDE.
-					     		FÖRETAGET SKA KUNNA VÄLJA MELLAN TRE OLIKA SYMBOLER, VILKA DESSA ÄR VET ENDAST ÅSA OCH HON SKA LÄGGA IN DESSA OCKSÅ. 
-					     		TODO: ÅSA
+					     		<img id="logo-right" src="../graphics/Annonser/sokande_detalj.png"/>
 					     </div>
 			
 					 </div>
@@ -133,9 +128,11 @@
           <!-- this is where the blue part starts -->
           <div class="row">
           	<!-- creating a canvas to draw the chart -->
+              <div id="charts">
 	          	<canvas id="diversity" width="600" height="400"></canvas>
               <canvas id="age" width="300" height="250"></canvas>
               <canvas id="etnicity" width="300" height="250"></canvas>
+                  </div>
           <script>
             
           var pieData = [
@@ -170,7 +167,7 @@
             new Chart(age).Bar(barData);
 
                 var barData2 = {
-                labels : ["Född i Sverige","Född inom Europa","Född utanför Europa"],
+                labels : ["SVE","EU","ej EU"],
                 datasets : [
                     {
                         fillColor : "#1b4e63",

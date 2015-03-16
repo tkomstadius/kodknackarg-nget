@@ -125,6 +125,7 @@ h2 {
 }
 
 #addResult {
+padding-bottom: 500px;
   padding-left: 45%;
 }
 
@@ -147,4 +148,8 @@ h2 {
   padding-top: 20%;
   padding-right: 5%;
 }
-
+#logo {
+    padding-top: 0px;
+    height: 75%;
+  width: 75%;
+}

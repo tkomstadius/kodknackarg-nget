@@ -86,17 +86,17 @@ padding-left: 330px;
 #left { 
   width: 40%; 
   margin:5px; 
-  padding: 1em; 
+padding-left: 0px;
   background: white; 
   /*border: 1px solid black; */
 } 
 
 #right { 
-  width: 40%; 
+  width: 50%; 
+    height: 20%;
   margin:5px; 
   padding: 1em; 
-  background: white; 
-  border: 1px solid black; 
+  background: white;  
 } 
 
 #left  { float:left;  }
@@ -105,6 +105,10 @@ padding-left: 330px;
 #logo-toppen {
 	padding: 3px;
     width: 800px;
+}
+#logo-right {
+	padding: 3px;
+    width: 472px;
 }
 
 #sokande {
@@ -223,7 +227,10 @@ padding-left: 330px;
   color: white;
   padding-left: 33%;
 }
-
+#charts {
+    padding-left: 200px;
+    position: center;
+}
 #fix {
   padding-top: 14%;
 }
@@ -232,5 +239,6 @@ padding-left: 330px;
   height: 15%;
 }
 #dataText {
-  padding-left: 200px;
+    color: white;
+  padding-left: 400px;
 }
